@@ -1,0 +1,8 @@
+name: Jira Check
+
+on:
+  pull_request:
+
+jobs:
+  jira:
+    uses: my-org/org-devops-workflows/.github/workflows/jira-check.yml@main
