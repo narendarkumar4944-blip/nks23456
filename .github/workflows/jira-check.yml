@@ -1,0 +1,10 @@
+name: Jira Validation
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  jira-check:
+    uses: org-devops-workflows/.github/.github/workflows/jira-check.yml@main
+    secrets: inherit
